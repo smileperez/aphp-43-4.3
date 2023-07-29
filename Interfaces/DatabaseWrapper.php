@@ -9,9 +9,9 @@ interface DatabaseWrapper
     // редактирует строку под конкретным id, возвращает результат после изменения
     public function update(int $id, array $values): array;
     // поиск по id
-    public function find(string $table, int $id): array;
+    public function find(int $id): array;
     // удаление по id
-    public function delete(string $table, int $id): bool;
+    public function delete(int $id): bool;
 }
 
 ?>
